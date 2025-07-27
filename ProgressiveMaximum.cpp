@@ -1,4 +1,3 @@
-// "Ei code er kaj holo array er pasha pasi 2ta index er value compare kore seta update kora"
 
 #include<iostream>
 using namespace std;
