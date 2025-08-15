@@ -1,11 +1,11 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 void primeSieve(int n) {
-    int prime[100] = {0}; // 0 means prime, 1 means not prime
+   vector<int> prime(n + 1, 0); // 0 means prime, 1 means not prime
 
     // Mark multiples as not prime
-    for (int i = 2; i * i <= n; i++) {
+    for (int i = 2;  i <= n; i++) {
         if (prime[i] == 0) {
             for (int j = i * i; j <= n; j += i) {
                 prime[j] = 1; // mark as not prime
